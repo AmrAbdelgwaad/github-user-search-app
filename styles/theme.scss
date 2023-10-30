@@ -110,80 +110,95 @@
   --icon-fill-hover: hsla(220, 18%, 16%, 1);
 }
 
-html{
-  color-scheme: dark;
-}
-
 // Layout colors:
 
- [data-theme="dark"] {
+[data-theme="dark"] {
   body {
     background-color: $clr-darkPrimary-900;
     color: $clr-neutral-100;
   }
-  .theme-toggle>:hover{
-    color:  hsla(222, 44%, 70%, 1);
+  .theme-toggle > :hover {
+    color: hsla(222, 44%, 70%, 1);
   }
-   .theme-name{
-     color: $clr-neutral-100;
-   }
-   .search__input::placeholder{
-     color: $clr-neutral-100;
-   }
-   .search__input{
-     color: $clr-neutral-100;
-   }
-   .search__btn{
-     color: $clr-neutral-100;
-     background: $clr_primary-600;
-   }
-   .search{
-     background: $clr-darkPrimary-700;
-   }
-   .github{
-     background-color: $clr-darkPrimary-700;
-   }
-   .github__link{
-     color: $clr-primary-600;
-   }
-   .github__list{
-     background-color: $clr-darkPrimary-900;
-   }
+  .theme-name {
+    color: $clr-neutral-100;
+  }
+  .search__input::placeholder {
+    color: $clr-neutral-100;
+  }
+  .search__input {
+    color: $clr-neutral-100;
+  }
+  .search__btn {
+    color: $clr-neutral-100;
+    background: $clr_primary-600;
+  }
+  .search {
+    background: $clr-darkPrimary-700;
+  }
+  .github {
+    background-color: $clr-darkPrimary-700;
+  }
+  .github__link {
+    color: $clr-primary-600;
+  }
+  .github__list {
+    background-color: $clr-darkPrimary-900;
+  }
+  .icon {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(6%) saturate(0%)
+      hue-rotate(36deg) brightness(108%) contrast(105%);
+  }
 }
 
 [data-theme="light"] {
   body {
     background-color: $clr-neutral-300;
   }
-  .theme-name{
+  .theme-name {
     color: $clr-lightPrimary-500;
   }
-  .theme-toggle>:hover{
-    color:  hsla(220, 18%, 16%, 1);
+  .theme-toggle > :hover {
+    color: hsla(220, 18%, 16%, 1);
   }
-  .search__input::placeholder{
+  .search__input::placeholder {
     color: $clr-lightPrimary-500;
   }
-  .search__input{
+  .search__input {
     color: $clr-lightPrimary-500;
   }
-  .search__btn{
+  .search__btn {
     color: $clr-neutral-100;
     background: $clr_primary-600;
   }
-  .search{
+  .search {
     background: $clr-neutral-200;
   }
-  .github__title{
+  .github {
+    background-color: $clr-neutral-200;
+  }
+  .github__title {
     color: $clr-lightPrimary-700;
   }
-  .github__link{
+  .github__link {
     color: $clr-primary-600;
   }
-  .github__date{
+  .github__date {
     color: $clr-lightPrimary-500;
   }
-  .github__bio{
+  .github__bio {
+    color: $clr-lightPrimary-500;
+  }
+  .github__list {
+    background-color: $clr-neutral-300;
+  }
+  .github__list > li {
+    color: $clr-lightPrimary-500;
+  }
+  .num{
+    color: $clr-lightPrimary-700;
+  }
+  .info{
     color: $clr-lightPrimary-500;
   }
 }

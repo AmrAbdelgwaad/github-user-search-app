@@ -59,5 +59,5 @@ const proudOfThisFunc = () => {
 ### Useful resources
 
 - [web.dev](https://web.dev/articles/building/a-theme-switch-component) I Used this to build the theme toggle
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [codpen.io](https://codepen.io/sosuke/pen/Pjoqqp) - I used this pen to change svg colors without using fill property
 

@@ -62,10 +62,14 @@ main {
 
 .github {
   margin-top: 1rem;
+  border-radius: 0.9375rem;
+  padding-bottom: 3rem;
+  margin-bottom: 4.94rem;
 }
 
 .flex-group {
   display: flex;
+  margin-top: 2rem;
 }
 
 .github__info {
@@ -105,17 +109,24 @@ main {
   justify-content: center;
   border-radius: 0.625rem;
   column-gap: 2rem;
-  margin-top: 1.44rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
-  padding: 1.13rem .87rem 1.19rem .94rem;
+  margin: 1.44rem 1.5rem 1.5rem;
+  padding: 1.13rem 0.87rem 1.19rem 0.94rem;
 }
-.github__list > li{
+.github__list > li {
   font-size: 0.6875rem;
 }
 .num {
   display: block;
   font-size: 1rem;
   font-weight: 700;
-  margin-top: .5rem;
+}
+
+.icon{
+  display: inline;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.info{
+  margin-left: .5rem;
 }

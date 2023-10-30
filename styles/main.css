@@ -68,6 +68,7 @@ body {
   font-weight: 400;
 }
 
+/*#8c94a3 filter: invert(66%) sepia(5%) saturate(851%) hue-rotate(181deg) brightness(88%) contrast(83%);*/
 /* Css reset */
 *,
 *::before,
@@ -137,6 +138,7 @@ body {
   font-weight: 400;
 }
 
+/*#8c94a3 filter: invert(66%) sepia(5%) saturate(851%) hue-rotate(181deg) brightness(88%) contrast(83%);*/
 .sun-and-moon > :is(.moon, .sun, .sun-beams) {
   transform-origin: center center;
 }
@@ -235,10 +237,6 @@ body {
   --icon-fill-hover: hsla(220, 18%, 16%, 1);
 }
 
-html {
-  color-scheme: dark;
-}
-
 [data-theme=dark] body {
   background-color: #141d2f;
   color: #fff;
@@ -271,6 +269,9 @@ html {
 [data-theme=dark] .github__list {
   background-color: #141d2f;
 }
+[data-theme=dark] .icon {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(6%) saturate(0%) hue-rotate(36deg) brightness(108%) contrast(105%);
+}
 
 [data-theme=light] body {
   background-color: #f6f8ff;
@@ -294,6 +295,9 @@ html {
 [data-theme=light] .search {
   background: #fefefe;
 }
+[data-theme=light] .github {
+  background-color: #fefefe;
+}
 [data-theme=light] .github__title {
   color: #2b3442;
 }
@@ -304,6 +308,18 @@ html {
   color: #4b6a9b;
 }
 [data-theme=light] .github__bio {
+  color: #4b6a9b;
+}
+[data-theme=light] .github__list {
+  background-color: #f6f8ff;
+}
+[data-theme=light] .github__list > li {
+  color: #4b6a9b;
+}
+[data-theme=light] .num {
+  color: #2b3442;
+}
+[data-theme=light] .info {
   color: #4b6a9b;
 }
 
@@ -371,10 +387,14 @@ main {
 
 .github {
   margin-top: 1rem;
+  border-radius: 0.9375rem;
+  padding-bottom: 3rem;
+  margin-bottom: 4.94rem;
 }
 
 .flex-group {
   display: flex;
+  margin-top: 2rem;
 }
 
 .github__info {
@@ -414,9 +434,7 @@ main {
   justify-content: center;
   border-radius: 0.625rem;
   column-gap: 2rem;
-  margin-top: 1.44rem;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin: 1.44rem 1.5rem 1.5rem;
   padding: 1.13rem 0.87rem 1.19rem 0.94rem;
 }
 
@@ -428,7 +446,16 @@ main {
   display: block;
   font-size: 1rem;
   font-weight: 700;
-  margin-top: 0.5rem;
+}
+
+.icon {
+  display: inline;
+  margin-left: 1.5rem;
+  margin-top: 1rem;
+}
+
+.info {
+  margin-left: 0.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */
