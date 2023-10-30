@@ -1,31 +1,95 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/styles.css">
-  <title>Frontend Mentor | GitHub user search app</title>
-</head>
-<body>
+    <link rel="icon" sizes="32x32" href="images/icon-search.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>GitHub user search app</title>
+    <script src="scripts/theme.js"></script>
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__logo">devfinder</h1>
 
-<!--  devfinder
-
-  Light
-  Dark
-
-  Search GitHub username...
-  Search
-
-  Joined
-
-  Repos
-  Followers
-  Following-->
-
-</body>
+      <button
+        class="theme-toggle"
+        title="Toggles light & dark"
+        id="theme-toggle"
+      >
+        <span id="theme-name" aria-live="polite" class="theme-name">dark</span>
+        <svg
+          class="sun-and-moon"
+          aria-hidden="true"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <mask class="moon" id="moon-mask">
+            <rect x="0" y="0" width="100%" height="100%" fill="white" />
+            <circle cx="24" cy="10" r="6" fill="black" />
+          </mask>
+          <circle
+            class="sun"
+            cx="12"
+            cy="12"
+            r="6"
+            mask="url(#moon-mask)"
+            fill="currentColor"
+          />
+          <g class="sun-beams" stroke="currentColor">
+            <line x1="12" y1="1" x2="12" y2="3" />
+            <line x1="12" y1="21" x2="12" y2="23" />
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+            <line x1="1" y1="12" x2="3" y2="12" />
+            <line x1="21" y1="12" x2="23" y2="12" />
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+          </g>
+        </svg>
+      </button>
+    </header>
+    <main>
+      <form class="search">
+        <img src="images/icon-search.svg" alt="" class="search__logo" />
+        <label for="search" class="screen-reader">search</label>
+        <input
+          type="search"
+          id="search"
+          class="search__input"
+          placeholder="Search GitHub username…"
+          required
+        />
+        <button class="search__btn">Search</button>
+      </form>
+      <div class="github">
+        <div class="flex-group">
+          <img src="images/profile.png" alt="" class="github__photo" />
+          <div class="github__info">
+            <h2 class="github__title">The Octocat</h2>
+            <a href="" class="github__link">@octocat</a>
+            <p class="github__date">Joined 25 Jan 2011</p>
+          </div>
+        </div>
+        <p class="github__bio">
+          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
+          Quisque volutpat mattis eros.
+        </p>
+        <ul class="github__list">
+          <li>Repos <span class="num">8</span></li>
+          <li>Followers <span class="num">3938</span></li>
+          <li>Following <span class="num">9</span></li>
+        </ul>
+      </div>
+    </main>
+  </body>
 </html>

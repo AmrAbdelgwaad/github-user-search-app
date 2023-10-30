@@ -66,19 +66,17 @@ select {
 
 // Variables & Font
 
-// TODO CHANGE THESE NAMES
+$clr-primary-600: #0079ff;
+$clr-darkPrimary-700: #1e2a47;
+$clr-darkPrimary-900: #141d2f;
 
-$clr-1: #0079ff;
-$white: #fff;
-$clr-2: #141d2f;
-$clr-3: #1e2a47;
+$clr-lightPrimary-300: #697c9a;
+$clr-lightPrimary-500: #4b6a9b;
+$clr-lightPrimary-700: #2b3442;
 
-$clr-4: #697c9a;
-$clr-5: #4b6a9b;
-$clr-6: #2b3442;
-
-$clr-7: #f6f8ff;
-$clr-8: #fefefe;
+$clr-neutral-100: #fff;
+$clr-neutral-200: #fefefe;
+$clr-neutral-300: #f6f8ff;
 
 body {
   font-family: "Space Mono", monospace;
