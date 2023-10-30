@@ -235,6 +235,10 @@ body {
   --icon-fill-hover: hsla(220, 18%, 16%, 1);
 }
 
+html {
+  color-scheme: dark;
+}
+
 [data-theme=dark] body {
   background-color: #141d2f;
   color: #fff;
