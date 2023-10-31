@@ -1,5 +1,4 @@
-@import "base";
-@import "https://unpkg.com/open-props/easings.min.css";
+@import "colors";
 
 .sun-and-moon > :is(.moon, .sun, .sun-beams) {
   transform-origin: center center;
@@ -43,28 +42,28 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .sun-and-moon > .sun {
-    transition: transform 0.5s var(--ease-elastic-3);
+    transition: transform 0.5s cubic-bezier(0.5, 1.25, 0.75, 1.25);
   }
 
   .sun-and-moon > .sun-beams {
     transition:
-      transform 0.5s var(--ease-elastic-4),
-      opacity 0.5s var(--ease-3);
+      transform 0.5s cubic-bezier(0.5, 1.5, 0.75, 1.25),
+      opacity 0.5s cubic-bezier(0.25, 0, 0.3, 1);
   }
 
   .sun-and-moon .moon > circle {
-    transition: transform 0.25s var(--ease-out-5);
+    transition: transform 0.25s cubic-bezier(0, 0, 0, 1);
   }
 
   @supports (cx: 1) {
     .sun-and-moon .moon > circle {
-      transition: cx 0.25s var(--ease-out-5);
+      transition: cx 0.25s cubic-bezier(0, 0, 0, 1);
     }
   }
 
   [data-theme="light"] .sun-and-moon > .sun {
     transform: scale(1.75);
-    transition-timing-function: var(--ease-3);
+    transition-timing-function: cubic-bezier(0.25, 0, 0.3, 1);
     transition-duration: 0.25s;
   }
 

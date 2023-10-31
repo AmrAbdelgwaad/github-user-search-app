@@ -63,24 +63,3 @@ select {
   white-space: nowrap;
   width: 1px;
 }
-
-// Variables & Font
-
-$clr-primary-600: #0079ff;
-$clr-darkPrimary-700: #1e2a47;
-$clr-darkPrimary-900: #141d2f;
-
-$clr-lightPrimary-300: #697c9a;
-$clr-lightPrimary-500: #4b6a9b;
-$clr-lightPrimary-700: #2b3442;
-
-$clr-neutral-100: #fff;
-$clr-neutral-200: #fefefe;
-$clr-neutral-300: #f6f8ff;
-
-body {
-  font-family: "Space Mono", monospace;
-  font-weight: 400;
-}
-
-/*#8c94a3 filter: invert(66%) sepia(5%) saturate(851%) hue-rotate(181deg) brightness(88%) contrast(83%);*/
