@@ -395,7 +395,7 @@ main {
 /*** Bigger Screens ***/
 @media (min-width: 50em) {
   .header__logo {
-    margin-right: 34rem;
+    margin-right: 33rem;
     margin-top: 9rem;
   }
   .theme-toggle {
@@ -418,8 +418,9 @@ main {
     font-size: 1.125rem;
   }
   .search__btn {
-    margin-left: 17.2rem;
+    margin-left: 16rem;
     font-size: 1rem;
+    padding: 0.78rem 1.5rem;
   }
   .github {
     margin-top: 1.5rem;
@@ -466,7 +467,7 @@ main {
   .grid-group {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 0 6.19rem 0 12.62rem;
+    margin: -1.3rem 6.19rem 0 12.62rem;
   }
   .icon {
     margin-left: 0;
