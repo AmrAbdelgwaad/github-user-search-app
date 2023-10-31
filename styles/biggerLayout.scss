@@ -2,7 +2,7 @@
 
 @media (min-width: 50em) {
   .header__logo {
-    margin-right: 21em;
+    margin-right: 34rem;
     margin-top: 9rem;
   }
 
@@ -58,7 +58,7 @@
   .github__bio {
     max-width: 30rem;
     font-size: 0.8125rem;
-    margin-top: 0;
+    margin-top: -2rem;
     margin-left: 12.62rem;
   }
   .github__list {
@@ -74,7 +74,7 @@
   .grid-group{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 2.44rem 6.19rem 0 12.62rem;
+    margin: 0 6.19rem 0 12.62rem;
   }
   .icon {
     margin-left: 0;
