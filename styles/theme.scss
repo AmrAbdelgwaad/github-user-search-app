@@ -144,9 +144,15 @@
   .github__list {
     background-color: $clr-darkPrimary-900;
   }
+  .blog{
+    color: $clr-neutral-100;
+  }
   .icon {
     filter: brightness(0) saturate(100%) invert(100%) sepia(6%) saturate(0%)
       hue-rotate(36deg) brightness(108%) contrast(105%);
+  }
+  .error{
+    color: $clr-error;
   }
 }
 
@@ -197,7 +203,13 @@
   .num{
     color: $clr-lightPrimary-700;
   }
+  .blog{
+    color: $clr-lightPrimary-500;
+  }
   .info{
     color: $clr-lightPrimary-500;
+  }
+  .error{
+    color: $clr-error;
   }
 }

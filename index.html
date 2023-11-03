@@ -67,50 +67,69 @@
           id="search"
           class="search__input"
           placeholder="Search GitHub username…"
+          aria-describedby="error"
           required
         />
+        <span class="error" aria-live="polite" id="error"></span>
         <button class="search__btn">Search</button>
       </form>
       <div class="github">
         <div class="flex-group">
-          <img src="images/profile.png" alt="" class="github__photo" />
+          <img src="" alt="" class="github__photo" id="photo" />
           <div class="github__info">
             <div>
-              <h2 class="github__title">The Octocat</h2>
-              <a href="" class="github__link">@octocat</a>
+              <h2 class="github__title" id="name"></h2>
+              <a href="" class="github__link" id="user"></a>
             </div>
-            <p class="github__date">Joined 25 Jan 2011</p>
+            <p class="github__date" id="date"></p>
           </div>
         </div>
-        <p class="github__bio">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio.
-          Quisque volutpat mattis eros.
-        </p>
+        <p class="github__bio" id="bio"></p>
         <ul class="github__list">
-          <li>Repos <span class="num">8</span></li>
-          <li>Followers <span class="num">3938</span></li>
-          <li>Following <span class="num">9</span></li>
+          <li>Repos <span class="num" id="repos"></span></li>
+          <li>Followers <span class="num" id="followers"></span></li>
+          <li>Following <span class="num" id="following"></span></li>
         </ul>
         <div class="grid-group">
           <p>
-            <img src="images/icon-location.svg" alt="" class="icon" />
+            <img
+              src="images/icon-location.svg"
+              alt=""
+              class="icon"
+              id="location-svg"
+            />
             <span class="screen-reader">Location:</span>
-            <span class="info">San Francisco</span>
+            <span class="info" id="location"></span>
           </p>
           <p>
-            <img src="images/icon-website.svg" alt="" class="icon" />
+            <img
+              src="images/icon-website.svg"
+              alt=""
+              class="icon"
+              id="blog-svg"
+            />
             <span class="screen-reader">Website:</span
-            ><span class="info"> https://github.blog</span>
+            ><a class="info blog" href="#" id="blog"></a>
           </p>
-          <p >
-            <img src="images/icon-twitter.svg" alt="" class="icon" />
+          <p class="grid-modifier">
+            <img
+              src="images/icon-twitter.svg"
+              alt=""
+              class="icon"
+              id="twitter-svg"
+            />
             <span class="screen-reader">Twitter:</span>
-            <span class="info">Not Available</span>
+            <span class="info" id="twitter"></span>
           </p>
           <p>
-            <img src="images/icon-company.svg" alt="" class="icon" />
+            <img
+              src="images/icon-company.svg"
+              alt=""
+              class="icon"
+              id="company-svg"
+            />
             <span class="screen-reader">Company:</span>
-            <span class="info">@github</span>
+            <span class="info" id="company"></span>
           </p>
         </div>
       </div>

@@ -43,7 +43,6 @@ main {
 .search__logo {
   margin-right: 0.56rem;
   max-width: 1.253rem;
-  /* margin-top: 1.25rem;*/
 }
 
 .search__input {
@@ -98,6 +97,9 @@ main {
 .github__link {
   font-size: 0.8125rem;
   text-decoration: none;
+  &:hover{
+    text-decoration: underline ;
+  }
 }
 
 .github__date {
@@ -138,4 +140,16 @@ main {
 .info {
   margin-left: 0.5rem;
   font-size: 0.8125rem;
+}
+
+.blog{
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline ;
+  }
+}
+
+.error{
+  font-size: 0.8125rem;
+  font-weight: 700;
 }

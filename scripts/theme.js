@@ -4,7 +4,7 @@ let audio = new Audio("click.wav");
 const onClick = () => {
   // flip current value
   theme.value = theme.value === "light" ? "dark" : "light";
-  audio.play().then(() => audio.play());
+  audio.play();
   setPreference();
 };
 

@@ -12,27 +12,33 @@
   .search {
     width: min(45.625rem, 90vw);
     padding: 0.41rem 0.44rem 0.47rem 1rem;
-    justify-content: start;
   }
   .search__logo {
     margin-right: 1.5rem;
     margin-left: 1.5rem;
   }
   .search__input {
+    margin-left: -2rem;
     font-size: 1.125rem;
     width: 17rem;
   }
   .search__input::placeholder {
     font-size: 1.125rem;
   }
+  .error{
+    font-size: 0.9375rem;
+    justify-self: end;
+    margin-left: 5rem;
+  }
   .search__btn {
-    margin-left: 16rem;
+    justify-self: end;
     font-size: 1rem;
     padding: 0.78rem 1.5rem;
   }
   .github {
     margin-top: 1.5rem;
     margin-bottom: 9.06rem;
+    max-width: 45.625rem;
   }
   .flex-group {
     margin-top: 3rem;
@@ -47,6 +53,7 @@
   .github__info {
     margin-left: 2.31rem;
     display: flex;
+
   }
   .github__link {
     font-size: 1rem;
@@ -58,8 +65,8 @@
   }
   .github__bio {
     max-width: 30rem;
-    font-size: 0.8125rem;
-    margin-top: -2rem;
+    font-size: 0.9375rem;
+    margin-top: -1rem;
     margin-left: 12.62rem;
   }
   .github__list {
@@ -75,7 +82,12 @@
   .grid-group{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: -1.3rem 6.19rem 0 12.62rem;
+    margin: -1.3rem 0 0 12.62rem;
+
+  }
+  .grid-modifier{
+    grid-column: 2/2;
+    grid-row: 1;
   }
   .icon {
     margin-left: 0;

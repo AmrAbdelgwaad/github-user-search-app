@@ -1,6 +1,6 @@
 # Frontend Mentor - GitHub user search app solution
 
-This is a solution to the [GitHub user search app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [GitHub user search app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/github-user-search-app-Q09YOgaH6). 
 
 
 ## Overview
@@ -23,7 +23,6 @@ Users should be able to:
 
 - ### [Live Site URL](https://amrabdelgwaad.github.io/github-user-search-app/)
 
-## My process
 
 ### Built with
 
@@ -34,30 +33,16 @@ Users should be able to:
 - CSS Grid
 - Mobile-first workflow
 - Vanilla Javascript
-- Asynchronous Javascript
+- Asynchronous 
 - Fetch Api
 
 
-### What I learned
-
-```html
-<h1>Some HTML code I'm proud of</h1>
-```
-```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
 
 
 
+---
 ### Useful resources
 
 - [web.dev](https://web.dev/articles/building/a-theme-switch-component) I Used this to build the theme toggle
-- [codpen.io](https://codepen.io/sosuke/pen/Pjoqqp) - I used this pen to change svg colors without using fill property
+- [codpen.io](https://codepen.io/sosuke/pen/Pjoqqp) - I used this pen to change svg colors  using filter property
 
